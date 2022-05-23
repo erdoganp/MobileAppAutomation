@@ -31,6 +31,9 @@ replay_pid*
 #JetBrains
 .idea/
 
+#DS
+.DS_Store
+
 #Applications
 *.exe
 *.war
