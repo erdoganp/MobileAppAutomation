@@ -1,4 +1,3 @@
-import com.hepsiburada.base.TestBase;
 import io.cucumber.java.Before;
 
 import java.net.MalformedURLException;
