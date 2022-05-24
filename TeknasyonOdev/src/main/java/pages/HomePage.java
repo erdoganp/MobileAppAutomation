@@ -9,11 +9,11 @@ public class HomePage extends PageBase{
         super(appiumDriver);
     }
 
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='Hepsiburada Hızlı Market']")
-    MobileElement hepsiBurada;
-
+    @AndroidFindBy(id="com.pozitron.hepsiburada:id/header_layout")
+    MobileElement hepsiburadaText;
     public void setGetHepsiburadaText(String exepText){
-        String hepsiburadaAttribute=getAttribute(hepsiBurada,"content-desc");
+        waitForOperations(hepsiburadaText);
+        String hepsiburadaAttribute=getAttribute(hepsiburadaText,"package");
         assertContains(hepsiburadaAttribute,exepText);
     }
 
@@ -31,7 +31,10 @@ public class HomePage extends PageBase{
         assertEqual(homePageAttribute,exepText);
 
     }
-
-
+    @AndroidFindBy(id="com.pozitron.hepsiburada:id/textViewSearchBox")
+    MobileElement searchTextBar;
+    public void setSearchTextBar(){
+        click(searchTextBar);
+    }
 
 }

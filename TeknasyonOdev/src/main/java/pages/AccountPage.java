@@ -15,7 +15,7 @@ public class AccountPage extends PageBase{
 
     public void setWelcomeText(String welcomeMessage){
         String welcomeText=getAttribute(accountMessage,"text");
-        assertEqual(welcomeText,welcomeMessage);
+        assertContains(welcomeText,welcomeMessage);
     }
 
     @AndroidFindBy(id="android:id/button1")

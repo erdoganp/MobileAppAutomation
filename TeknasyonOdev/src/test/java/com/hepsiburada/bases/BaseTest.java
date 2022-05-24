@@ -30,4 +30,11 @@ public class BaseTest {
     }
 
    */
+
+    public  static void tearDown(){
+
+        if(driver !=null){
+            driver.quit();
+        }
+    }
 }
