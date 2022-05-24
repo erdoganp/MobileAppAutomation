@@ -15,7 +15,7 @@ import static java.time.Duration.ofMillis;
 
 public class PageBase {
     AppiumDriver driver;
-    public static final long WAIT=40;
+    public static final long WAIT=20;
 
     public PageBase(AppiumDriver appiumDriver){
         PageFactory.initElements(new AppiumFieldDecorator(appiumDriver),this);
@@ -52,7 +52,7 @@ public class PageBase {
         Assert.assertEquals(actualText,exepText);
     }
 
-    //swipe methodu ile sayfa da scrool işlemi yapılır
+    //scroolTheElements ile sayfa da kayma işlemi yapılır
     public void scroolTheElements(MobileElement startElement, MobileElement endElement) {
         int startX = startElement.getLocation().getX() + (startElement.getSize().getWidth() / 2);
         int startY = startElement.getLocation().getY() + (startElement.getSize().getHeight() / 2);

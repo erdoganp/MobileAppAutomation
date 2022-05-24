@@ -1,2 +1,15 @@
-package com.hepsiburada.steps;public class MyListStepsDefs {
+package com.hepsiburada.steps;
+
+import com.hepsiburada.bases.BaseTest;
+import io.cucumber.java.en.When;
+import pages.MyListPage;
+
+public class MyListStepsDefs extends BaseTest {
+    MyListPage myListPage;
+    @When("Listerimde begendiklerin kategorisine gidilir")
+    public void listerimdeBegendiklerinKategorisineGidilir() {
+
+        myListPage=new MyListPage(driver);
+        myListPage.setMyList();
+    }
 }

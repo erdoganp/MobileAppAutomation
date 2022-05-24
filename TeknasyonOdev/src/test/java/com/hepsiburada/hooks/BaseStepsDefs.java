@@ -19,11 +19,11 @@ public class BaseStepsDefs extends BaseTest {
         System.out.println("platform tag name error");
     }
 }
-   /*@After
+   @After
     public void closeApp(){
         tearDown();
     }
-*/
+
     @CucumberOptions(
             features = {"src/test/resources/features"},
             glue={"com/trendyol/steps"},
