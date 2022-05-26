@@ -54,10 +54,10 @@ public class PageBase {
 
     //scroolTheElements ile sayfa da kayma işlemi yapılır
     public void scroolTheElements(MobileElement startElement, MobileElement endElement) {
-        int startX = startElement.getLocation().getX() + (startElement.getSize().getWidth() /2 );
-        int startY = startElement.getLocation().getY() + (startElement.getSize().getHeight() / 2);
-        int endX = endElement.getLocation().getX() + (endElement.getSize().getWidth() / 2);
-        int endY = endElement.getLocation().getY() + (endElement.getSize().getHeight() / 2);
+        int startX = startElement.getLocation().getX() + (startElement.getSize().getWidth() /5 );
+        int startY = startElement.getLocation().getY() + (startElement.getSize().getHeight() / 5);
+        int endX = endElement.getLocation().getX() + (endElement.getSize().getWidth() / 5);
+        int endY = endElement.getLocation().getY() + (endElement.getSize().getHeight() / 5);
         new TouchAction(driver)
                 .press(point(startX, startY))
                 .waitAction(waitOptions(ofMillis(5000)))

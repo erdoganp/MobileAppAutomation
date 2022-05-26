@@ -5,9 +5,9 @@ Feature: Hepsiburada all  scenario
     When  Açılan uygulamanın "hepsiburada" olduğu kontrol edilir
     When  Anasayfada yeralan profil iconuna tiklanir
     When Profile page de giris butonuna tiklanir
-    When  "xxxxxx" email bilgisi girilir
+    When  "xxxxx" email bilgisi girilir
     Then UserName pagedeki giris butonuna tiklanir
-    When "xxxxxxx" password bilgisi girilir
+    When "xxxxx" password bilgisi girilir
     Then Password pagedeki giris butonuna tiklanir
     When "Keyifli alışverişler dileriz." bilgisi görülür
     Then Tamam butonuna tiklanir
