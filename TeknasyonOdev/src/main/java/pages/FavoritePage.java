@@ -30,6 +30,7 @@ public class FavoritePage extends PageBase{
         return getFavoriteName;
 
     }
+    //gittest
     public void pricesEqualCheck() {
         super.assertEqual(getFavoritePrice, ProductDetailPage.price);
     }
