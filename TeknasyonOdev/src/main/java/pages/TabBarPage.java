@@ -12,7 +12,6 @@ public class TabBarPage extends PageBase{
     @AndroidFindBy(xpath ="//android.widget.FrameLayout[@content-desc='Listelerim']/android.widget.FrameLayout/android.widget.ImageView")
     MobileElement listelerimButton;
 
-    public void setListelerim(){
-        listelerimButton.click();
+    public void setListelerim(){click(listelerimButton);
     }
 }

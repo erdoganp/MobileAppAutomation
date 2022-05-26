@@ -13,6 +13,6 @@ public class MyListPage extends PageBase{
     MobileElement myLikeButton;
 
     public void setMyList(){
-        myLikeButton.click();
+        click(myLikeButton);
     }
 }

@@ -9,7 +9,7 @@ public class ProductDetailPage extends PageBase{
         super(appiumDriver);
     }
 
-    static String price;
+   static String price;
     static String name;
 
     @AndroidFindBy(id = "com.pozitron.hepsiburada:id/price")
@@ -36,7 +36,7 @@ public class ProductDetailPage extends PageBase{
     MobileElement favoriteIcon;
 
     public void setFavoriteIcon(){
-        favoriteIcon.click();
+        click(favoriteIcon);
     }
 
    // @AndroidFindBy(id = "com.pozitron.hepsiburada:id/leftIcon")
@@ -44,6 +44,6 @@ public class ProductDetailPage extends PageBase{
     MobileElement backbutton;
 
     public void setBackbutton(){
-        backbutton.click();
+        click(backbutton);
     }
 }
