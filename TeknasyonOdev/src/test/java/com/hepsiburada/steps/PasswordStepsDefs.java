@@ -8,7 +8,7 @@ import pages.PasswordPage;
 public class PasswordStepsDefs extends BaseTest {
 
     PasswordPage passwordPage;
-    PasswordPage passwordPage2;
+
     @When("{string} password bilgisi girilir")
     public void passwordBilgisiGirilir(String password) {
 
@@ -18,7 +18,7 @@ public class PasswordStepsDefs extends BaseTest {
 
     @Then("Password pagedeki giris butonuna tiklanir")
     public void passwordPagedekiGirisButonunaTiklanir() {
-        passwordPage2 =new PasswordPage(driver);
-        passwordPage2.setPassword();
+
+        passwordPage.setPassword();
     }
 }

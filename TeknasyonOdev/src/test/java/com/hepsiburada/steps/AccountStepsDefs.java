@@ -7,7 +7,6 @@ import pages.AccountPage;
 
 public class AccountStepsDefs extends BaseTest {
     AccountPage accountPage;
-    AccountPage accountPage2;
     @When("{string} bilgisi görülür")
     public void bilgisiGörülür(String welcome) {
         accountPage=new AccountPage(driver);
@@ -16,14 +15,14 @@ public class AccountStepsDefs extends BaseTest {
 
     @Then("Tamam butonuna tiklanir")
     public void tamamButonunaTiklanir() {
-        accountPage2=new AccountPage(driver);
-        accountPage2.setOk();
+
+        accountPage.setOk();
 
     }
 
 
     @When("Account pagede dismiss butonuna tiklanir")
     public void accountPagedeDismissButonunaTiklanir() {
-        accountPage2.setDismiss();
+        accountPage.setDismiss();
     }
 }

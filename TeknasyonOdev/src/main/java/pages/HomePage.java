@@ -16,6 +16,13 @@ public class HomePage extends PageBase{
         String hepsiburadaAttribute=getAttribute(hepsiburadaText,"package");
         assertContains(hepsiburadaAttribute,exepText);
     }
+    @AndroidFindBy(id="com.pozitron.hepsiburada:id/toolbarHome")
+    MobileElement homePageCheck;
+    public void setGetHomeText(String exepText){
+        waitForOperations(homePageCheck);
+        String homePageAttribute=getAttribute(homePageCheck,"resource-id");
+        assertContains(homePageAttribute,exepText);
+    }
 
     @AndroidFindBy(id = "com.pozitron.hepsiburada:id/account_menu_button")
     MobileElement profile;

@@ -5,13 +5,14 @@ Feature: Hepsiburada all  scenario
     When  Açılan uygulamanın "hepsiburada" olduğu kontrol edilir
     When  Anasayfada yeralan profil iconuna tiklanir
     When Profile page de giris butonuna tiklanir
-    When  "xxxxx" email bilgisi girilir
+    When "odev@scpulse.com" email bilgisi girilir
     Then UserName pagedeki giris butonuna tiklanir
-    When "xxxxx" password bilgisi girilir
+    When "Odev1234" password bilgisi girilir
     Then Password pagedeki giris butonuna tiklanir
     When "Keyifli alışverişler dileriz." bilgisi görülür
     Then Tamam butonuna tiklanir
     When Account pagede dismiss butonuna tiklanir
+    When Gelen sayfanin HomePage oldugu kontrol edilir
     When HomePagede searchtextboxa tiklanir
     When Searchpage de "laptop" ürünü aratilir
     Then listelenen ilk eleman secilir

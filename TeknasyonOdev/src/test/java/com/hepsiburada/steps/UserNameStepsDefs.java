@@ -8,7 +8,7 @@ import pages.UserNamePage;
 public class UserNameStepsDefs extends BaseTest {
 
     UserNamePage userNamePage;
-    UserNamePage userNamePage2;
+
     @When("{string} email bilgisi girilir")
     public void emailBilgisiGirilir(String email) {
 
@@ -18,7 +18,7 @@ public class UserNameStepsDefs extends BaseTest {
 
     @Then("UserName pagedeki giris butonuna tiklanir")
     public void usernamePagedekiGirisButonunaTiklanir() {
-        userNamePage2=new UserNamePage(driver);
-        userNamePage2.setSubmit();
+
+        userNamePage.setSubmit();
     }
 }

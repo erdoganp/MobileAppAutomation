@@ -23,6 +23,11 @@ public class BaseTest {
 
         driver =new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),desiredCapabilities);
     }
+    public static void tearDown() {
+            if (driver != null) {
+                driver.quit();
 
+        }
+    }
 
 }

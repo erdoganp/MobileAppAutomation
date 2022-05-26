@@ -7,7 +7,7 @@ import pages.HomePage;
 public class HomeStepsDefs extends BaseTest {
 
     HomePage homePage;
-    HomePage homePage2;
+
     @When("Açılan uygulamanın {string} olduğu kontrol edilir")
     public void açılanUygulamanınHepsiburadaOlduğuKontrolEdilir(String text) {
         homePage=new HomePage(driver);
@@ -17,12 +17,17 @@ public class HomeStepsDefs extends BaseTest {
 
     @When("Anasayfada yeralan profil iconuna tiklanir")
     public void anasayfadaYeralanProfilIconunaTiklanir() {
-        homePage2=new HomePage(driver);
-        homePage2.setProfile();
+
+        homePage.setProfile();
     }
 
     @When("HomePagede searchtextboxa tiklanir")
     public void homepagedeSearchtextboxaTiklanir() {
-        homePage2.setSearchTextBar();
+        homePage.setSearchTextBar();
+    }
+
+    @When("Gelen sayfanin HomePage oldugu kontrol edilir")
+    public void gelenSayfaninHomePageOlduguKontrolEdilir() {
+        homePage.setGetHomeText("Home");
     }
 }
