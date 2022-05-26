@@ -1,7 +1,7 @@
 Feature: Hepsiburada all  scenario
 
   @Android
-  Scenario: Android login ve sepet
+  Scenario: Android login ve all steps
     When  Açılan uygulamanın "hepsiburada" olduğu kontrol edilir
     When  Anasayfada yeralan profil iconuna tiklanir
     When Profile page de giris butonuna tiklanir

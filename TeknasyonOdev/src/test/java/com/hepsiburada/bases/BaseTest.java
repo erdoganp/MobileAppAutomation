@@ -25,16 +25,4 @@ public class BaseTest {
     }
 
 
-  /*  public  static void main(String[] args) throws MalformedURLException {
-        androidSetup();
-    }
-
-   */
-
-    public  static void tearDown(){
-
-        if(driver !=null){
-            driver.quit();
-        }
-    }
 }
