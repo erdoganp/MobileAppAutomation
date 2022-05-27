@@ -10,6 +10,7 @@ public class FavoritePage extends PageBase{
         super(appiumDriver);
     }
 
+
     @AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.webkit.WebView/android.webkit.WebView/android.view.View/android.widget.ListView/android.view.View/android.view.View[3]")
     MobileElement getProductPrice;
     String getFavoritePrice;
@@ -27,6 +28,7 @@ public class FavoritePage extends PageBase{
 
     }
 
+
     public String setGetProductName(){
         getFavoriteName=getAttribute(getProductName,"content-desc");
         System.out.println("Favorite Page Name : " + getFavoriteName);
@@ -34,11 +36,12 @@ public class FavoritePage extends PageBase{
 
     }
 
+
+
     public void pricesEqualCheck() {
         super.assertEqual(getFavoritePrice, ProductDetailPage.price);
     }
     public void nameEqualCheck(){super.assertEqual(getFavoriteName,ProductDetailPage.name);}
-
 
 
 

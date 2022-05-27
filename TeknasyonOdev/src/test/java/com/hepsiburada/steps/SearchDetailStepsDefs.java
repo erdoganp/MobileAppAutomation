@@ -8,15 +8,16 @@ import pages.SearchDetailPage;
 public class SearchDetailStepsDefs extends BaseTest {
 
     SearchDetailPage searchDetailPage;
-    SearchDetailPage searchDetailPage2;
+    int pageCount=2;
     @When("Urun Listesinde Ucuncu satir besinci eleman secilir")
     public void urunListesindeUcuncuSatirBesinciElemanSecilir() {
         searchDetailPage=new SearchDetailPage(driver);
-        searchDetailPage.setSelectProduct();
-        searchDetailPage.setSelectProduct();
+
+        for(int i=0;i<pageCount;i++){
+            searchDetailPage.setSelectProduct();
+        }
         searchDetailPage.setFifthElement();
 
-        /*searchDetailPage.setSelectProduct2();
-        searchDetailPage.setThirdElement();*/
+
     }
 }
