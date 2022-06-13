@@ -8,13 +8,13 @@ import pages.AccountPage;
 public class AccountStepsDefs extends BaseTest {
     AccountPage accountPage;
     @When("{string} bilgisi görülür")
-    public void bilgisiGörülür(String welcome) {
+    public void getInformation(String welcome) {
         accountPage=new AccountPage(driver);
         accountPage.setWelcomeText(welcome);
     }
 
     @Then("Tamam butonuna tiklanir")
-    public void tamamButonunaTiklanir() {
+    public void setOkButton() {
 
         accountPage.setOk();
 
@@ -22,7 +22,7 @@ public class AccountStepsDefs extends BaseTest {
 
 
     @When("Account pagede dismiss butonuna tiklanir")
-    public void accountPagedeDismissButonunaTiklanir() {
+    public void setDismissButton() {
         accountPage.setDismiss();
     }
 }

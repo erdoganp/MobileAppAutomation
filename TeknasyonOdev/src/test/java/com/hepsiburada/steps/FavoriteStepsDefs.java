@@ -8,14 +8,14 @@ public class FavoriteStepsDefs extends BaseTest {
 
     FavoritePage favoritePage;
     @Then("Favorite page de name i kontrol et")
-    public void favoritePageDeNameIKontrolEt() {
+    public void verifyName() {
         favoritePage=new FavoritePage(driver);
         favoritePage.setGetProductName();
         favoritePage.nameEqualCheck();
     }
 
     @Then("Favorite page de price i kontrol et")
-    public void favoritePageDePriceIKontrolEt() {
+    public void verifyPrice() {
         favoritePage.setGetProductPrice();
         favoritePage.pricesEqualCheck();
     }

@@ -9,25 +9,24 @@ public class HomeStepsDefs extends BaseTest {
     HomePage homePage;
 
     @When("Açılan uygulamanın {string} olduğu kontrol edilir")
-    public void açılanUygulamanınHepsiburadaOlduğuKontrolEdilir(String text) {
+    public void verifyHepsiburada(String text) {
         homePage=new HomePage(driver);
         homePage.setGetHepsiburadaText("hepsiburada");
     }
 
 
     @When("Anasayfada yeralan profil iconuna tiklanir")
-    public void anasayfadaYeralanProfilIconunaTiklanir() {
-
+    public void setProfilButton() {
         homePage.setProfile();
     }
 
     @When("HomePagede searchtextboxa tiklanir")
-    public void homepagedeSearchtextboxaTiklanir() {
+    public void setSearchButton() {
         homePage.setSearchTextBar();
     }
 
     @When("Gelen sayfanin HomePage oldugu kontrol edilir")
-    public void gelenSayfaninHomePageOlduguKontrolEdilir() {
+    public void verifyHomePage() {
         homePage.setGetHomeText("Home");
     }
 }

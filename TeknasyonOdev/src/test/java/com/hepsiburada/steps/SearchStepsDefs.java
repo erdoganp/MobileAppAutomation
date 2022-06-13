@@ -8,13 +8,13 @@ import pages.SearchPage;
 public class SearchStepsDefs extends BaseTest {
     SearchPage searchPage;
     @When("Searchpage de {string} ürünü aratilir")
-    public void searchpageDeÜrünüAratilir(String seekingProduct) {
+    public void searchTheProduct(String seekingProduct) {
         searchPage=new SearchPage(driver);
         searchPage.setSearchBarText(seekingProduct);
     }
 
     @Then("listelenen ilk eleman secilir")
-    public void listelenenIlkElemanSecilir() {
+    public void setThefirstElement() {
         searchPage.setFirstValue();
     }
 }

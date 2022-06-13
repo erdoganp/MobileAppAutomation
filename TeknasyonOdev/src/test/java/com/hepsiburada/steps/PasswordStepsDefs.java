@@ -10,14 +10,14 @@ public class PasswordStepsDefs extends BaseTest {
     PasswordPage passwordPage;
 
     @When("{string} password bilgisi girilir")
-    public void passwordBilgisiGirilir(String password) {
+    public void setPasswordInformation(String password) {
 
         passwordPage =new PasswordPage(driver);
         passwordPage.setPasswordText(password);
     }
 
     @Then("Password pagedeki giris butonuna tiklanir")
-    public void passwordPagedekiGirisButonunaTiklanir() {
+    public void setPasswordEnterButton() {
 
         passwordPage.setPassword();
     }

@@ -7,7 +7,7 @@ import pages.TabBarPage;
 public class TabBarStepsDefs extends BaseTest {
     TabBarPage tabBarPage;
     @When("Tabbar alanindaki listelirim itemina tiklanir")
-    public void tabbarAlanindakiListelirimIteminaTiklanir() {
+    public void setTheMyList() {
         tabBarPage =new TabBarPage(driver);
         tabBarPage.setListelerim();
     }

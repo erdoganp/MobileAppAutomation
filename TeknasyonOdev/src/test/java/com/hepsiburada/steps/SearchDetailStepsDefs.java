@@ -10,7 +10,7 @@ public class SearchDetailStepsDefs extends BaseTest {
     SearchDetailPage searchDetailPage;
     int pageCount=2;
     @When("Urun Listesinde Ucuncu satir besinci eleman secilir")
-    public void urunListesindeUcuncuSatirBesinciElemanSecilir() {
+    public void setFifthElement() {
         searchDetailPage=new SearchDetailPage(driver);
 
         for(int i=0;i<pageCount;i++){

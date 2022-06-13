@@ -8,7 +8,7 @@ public class ProfileStepsDefs extends BaseTest {
 
     ProfilePage profilePage;
     @When("Profile page de giris butonuna tiklanir")
-    public void profilePageDeGirisButonunaTiklanir() {
+    public void setProfilePageButton() {
 
         profilePage =new ProfilePage(driver);
         profilePage.setSubmit();

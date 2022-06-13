@@ -10,14 +10,14 @@ public class UserNameStepsDefs extends BaseTest {
     UserNamePage userNamePage;
 
     @When("{string} email bilgisi girilir")
-    public void emailBilgisiGirilir(String email) {
+    public void setTheEmail(String email) {
 
         userNamePage =new UserNamePage(driver);
         userNamePage.setEmailText(email);
     }
 
     @Then("UserName pagedeki giris butonuna tiklanir")
-    public void usernamePagedekiGirisButonunaTiklanir() {
+    public void setTheEnterButton() {
 
         userNamePage.setSubmit();
     }

@@ -9,7 +9,7 @@ public class ProductStepsDefs extends BaseTest {
 
     ProductDetailPage productDetailPage;
     @When("Favorite iconuna tiklanir")
-    public void favoriteIconunaTiklanir() {
+    public void setFavoriteButton() {
         productDetailPage =new ProductDetailPage(driver);
         productDetailPage.setFavoriteIcon();
         productDetailPage.setProductName();
@@ -17,7 +17,7 @@ public class ProductStepsDefs extends BaseTest {
     }
 
     @Then("Urun listeleme sayfasina geri donulur")
-    public void urunListelemeSayfasinaGeriDonulur() {
+    public void navigateTheList() {
         productDetailPage.setBackbutton();
     }
 }
