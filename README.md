@@ -1,4 +1,9 @@
 # TeknasyonOdev
+## Bagımlılıklar
+
+## Kurulum
+## Testleri Calıstırma
+
 - Proje java ve Genkins dili ile yazılmıstır
 - Yönetim aracı olarak Maven kullanılmıstır.
 - Dependecy ler için pom.xml dosyası kontrol edilmelidir.Cucumber ,TestNG ile ilgili versiyonlar pom dosyasından alınabilir.
