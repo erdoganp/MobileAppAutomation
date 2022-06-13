@@ -21,3 +21,4 @@ public class SearchDetailStepsDefs extends BaseTest {
 
     }
 }
+
