@@ -1,7 +1,12 @@
 # TeknasyonOdev
 ## Bagımlılıklar
+- Java (1.8.0_331)
+- Maven 
+- Cucumber Core(7.5)
+- Cucumber TestNG(7.2.3)
 
 ## Kurulum
+
 ## Testleri Calıstırma
 
 - Proje java ve Genkins dili ile yazılmıstır
