@@ -1,5 +1,5 @@
 # TeknasyonOdev
--Proje java ve Genkins dili ile yazılmıstır
+- Proje java ve Genkins dili ile yazılmıstır
 -Yönetim aracı olarak Maven kullanılmıstır.
 -Dependecy ler için pom.xml dosyası kontrol edilmelidir.Cucumber ,TestNG ile ilgili versiyonlar pom dosyasından alınabilir.
 -Projede tek bir senaryoda istenilen tüm adımlar işlenmistir.
